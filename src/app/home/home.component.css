@@ -1,0 +1,100 @@
+.banner-logo {
+  width: min(30vw, 50vh);
+  height: min(30vw, 50vh);
+}
+
+.main-heading-welcome {
+  font-size: 4vw;
+  font-family: "Lato Very Light";
+}
+
+.main-heading-orka {
+  font-size: 7vw;
+  font-family: "Lato";
+}
+
+.page {
+  margin-top: 50px;
+  min-height: 100vh;
+  /* background-color: aqua; */
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+}
+
+.section{
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .section {
+      align-items: center;
+      flex-direction: column;
+  }
+}
+
+.breathing{
+  animation-name: breathing-animation;
+  animation-duration: 15s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+@keyframes breathing-animation{
+  0%{
+      opacity: 0;
+      transform: scale(0.75);
+  }
+  10%{
+      opacity: 1;
+  }
+
+  100%{
+      transform: scale(1.0);
+  }
+}
+
+.discord-color{
+  color: white;
+  background-color: #5865F2;
+}
+
+.info-card{
+  align-self: stretch;
+  /* background-color: rgb(53, 122, 184); */
+}
+.info-card p{
+  padding: 10px;
+  display: flex;
+  /* background-color: bisque; */
+  align-self: flex-end;
+  transform: scale(1.0);
+  transition-duration: 150ms;
+}
+
+.infocards:hover .info-card p,.infocards:hover .info-card h3{
+  color: rgba(255,255,255,0.1);
+}
+
+.info-card:hover{
+
+  align-self: stretch;
+  background-color: var(--darker);
+  z-index: 1;
+  transform: scale(1.2);
+  transition-duration: 150ms;
+}
+
+.infocards:hover .info-card:hover p, .infocards:hover .info-card:hover h3{
+  color: white;
+}

@@ -1,1 +1,153 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0px;
+  background-size: contain;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("/images/project-orka-background-gradient.webp");
+}
+
+*{
+  color: white;
+  font-family: "Lato Light";
+  text-decoration: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+*{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+span{
+ font-style: normal;
+}
+
+
+h1{
+  font-size: max(2vw,16px);
+}
+
+h2{
+  font-size: max(1.5vw,16px);
+}
+
+h3{
+  font-size: max(1.25vw,16px);
+}
+
+h4{
+  font-size: max(1vw,16px);
+}
+
+h5{
+  font-size: max(0.8vw,16px);
+}
+
+h6{
+  font-size: max(0.5vw,16px);
+}
+
+p{
+  font-size: max(1vw,20px);
+  text-align: justify;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato Very Light";
+}
+
+/*global colors*/
+:root {
+  --almostBlack: rgb(5, 5, 5);
+  --dark: rgba(0,0,0,0.5);
+  --darker: rgba(0,0,0,0.75);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Lato Very Bold";
+  src: url(assets/fonts/Lato-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Lato Bold";
+  src: url(assets/fonts/Lato-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Lato";
+  src: url(assets/fonts/Lato-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Lato Light";
+  src: url(assets/fonts/Lato-Light.ttf) format("truetype");
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: "Lato Very Light";
+  src: url(assets/fonts/Lato-Thin.ttf) format("truetype");
+}
+
+
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button{
+    margin: 10px;
+    padding: 15px;
+    color: black;
+    cursor: pointer;
+    border-radius: 40px;
+    transform: scale(1.0);
+    background-color: white;
+    transition-duration: 250ms;
+    font-family: "Lato Very Bold";
+    box-shadow: 0px 0px 20px 0px black;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button:active{
+    opacity: 0.75;
+}
+
+.button:hover{
+    transform: scale(1.2);
+    transition-duration: 250ms;
+    z-index: 1;
+}
+
+
+
